@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon" />
 
     <link rel="stylesheet" href="src/sass/main.scss" />
-    <script defer src="src/js/controller.js"></script>
+    <script type="module" src="src/js/controller.js"></script>
 
     <title>forkify // Search over 1,000,000 recipes</title>
   </head>
@@ -86,6 +86,7 @@
 
       <div class="search-results">
         <ul class="results">
+
           <!-- 
           <li class="preview">
             <a class="preview__link preview__link--active" href="#23456">
@@ -121,7 +122,7 @@
           </button> -->
         </div>
 
-        <p class="copyright">
+        <!-- <p class="copyright">
           &copy; Copyright by
           <a
             class="twitter-link"
@@ -130,7 +131,7 @@
             >Jonas Schmedtmann</a
           >. Use for learning or your portfolio. Don't use to teach. Don't claim
           as your own.
-        </p>
+        </p> -->
       </div>
 
       <div class="recipe">
@@ -263,13 +264,13 @@
         <div class="upload__column">
           <h3 class="upload__heading">Recipe data</h3>
           <label>Title</label>
-          <input value="TEST" required name="title" type="text" />
+          <input value="Input Title" required name="title" type="text" />
           <label>URL</label>
-          <input value="TEST" required name="sourceUrl" type="text" />
+          <input value="Input URL" required name="sourceUrl" type="text" />
           <label>Image URL</label>
-          <input value="TEST" required name="image" type="text" />
+          <input value="Input Image" required name="image" type="text" />
           <label>Publisher</label>
-          <input value="TEST" required name="publisher" type="text" />
+          <input value="Input Publisher" required name="publisher" type="text" />
           <label>Prep time</label>
           <input value="23" required name="cookingTime" type="number" />
           <label>Servings</label>
